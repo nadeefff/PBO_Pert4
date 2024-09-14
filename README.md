@@ -1,1 +1,3 @@
 # TugasPert4
+Proyek ini adalah tugas PBO yang mengimplementasikan operasi CRUD (Create, Read, Update, Delete) menggunakan JDBC dengan PostgreSQL, serta penerapan exception handling di Java. Program ini memungkinkan Anda untuk menambah, menampilkan, menghapus, dan memperbarui data dalam tabel petugas. Exception handling diimplementasikan menggunakan try-catch dan throws untuk menangani kesalahan seperti ArrayIndexOutOfBoundsException. Untuk memulai, clone repository, buat dan konfigurasikan database PostgreSQL, dan jalankan program dengan Java. Detail lebih lanjut dan panduan penggunaan dapat ditemukan di dokumentasi proyek.
+
