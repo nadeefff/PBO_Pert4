@@ -3,26 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pert4;
-import java.util.Scanner;
+package Exception;
+
 /**
  *
  * @author LENOVO
  */
-public class Throw {
-    public static void main(String[] args) throws ArrayIndexOutOfBoundsException {
-        int[] array = {0, 1, 2, 3}; // Fixed array initialization
+public class Exception_Nadif extends Exception {
+    // Kelas yang merepresentasikan exception yang didefinisikan pengguna
+    public Exception_Nadif(String message) {
+        // Memanggil konstruktor dari kelas parent Exception
+        super(message);
+    }
 
-        Scanner userInput = new Scanner(System.in);
+// Kelas utama yang menggunakan Zia
+    public static void main(String[] args) {
+        try {
+            // Melempar objek dari exception yang didefinisikan pengguna
+            throw new Exception_Nadif("Ini adalah pesan dari exception Zia");
+        } catch (Exception_Nadif ex) {
+            System.out.println("Exception ditangkap");
 
-        System.out.print("nilai array ke: ");
-
-        int index = userInput.nextInt(); // Fixed syntax for assigning user input
-
-        // No try-catch block, instead the method declares it can throw the exception
-        System.out.printf("index ke-%d, adalah %d\n", index, array[index]);
-
-        // Program end message
-        System.out.println("Akhir dari program.");
+            // Mencetak pesan dari objek Zia
+            System.out.println(ex.getMessage());
+        }
     }
 }
